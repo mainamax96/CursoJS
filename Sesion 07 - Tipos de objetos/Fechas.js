@@ -1,38 +1,44 @@
-// Trabajando con fechas
-const fecha = new Date()
+// trabajando con fechas
+const fecha = new Date( )
+
 console.log(fecha)
 
-const fecha2 = new Date(1997,10,10,23)
+const fecha2 = new Date(1987,10,20,1,23,52,192)
 console.log(fecha2)
 
-const fecha3 = new Date(1600000000000)
-console.log(fecha3);
+const fecha3 = new Date(-10000000000000)
+console.log(fecha3)
 
-const fecha4 = new Date("October 13 1979 15:15:15")
-console.log(fecha4);
+const fecha4 = new Date("October 13, 1979 12:15:15")
+console.log(fecha4)
 
-console.log(fecha < fecha2);
+console.log(fecha < fecha2)
 
-const fecha5 = new Date(1997,10,10,23)
+const fecha5 = new Date(1987,10,20,1,23,52,192)
+console.log(fecha5)
 
-console.log(fecha2 === fecha5) // ERROR - no se pueden comprar fechas de este modo
+console.log(fecha2 === fecha5) // ERROR, no se puede comparar fechar de esta manera
 
-console.log(fecha2.getTime() === fecha5.getTime()) // CORRECTO 
+console.log(fecha2.getTime() === fecha5.getTime())// OK, esta es la forma de comparar fechas
 
-//// Obtener el dia, mes y año de una fecha
-// Obtener Dia .getDate()
+// Obtener el dia, mes y año de una fecha
+// obtener dia .getDate()
 console.log(fecha2.getDate())
 
-// Obtener el mes .getMonth() (0-Enero , 11-Diciembre)
-console.log(fecha2.getMonth()+1)
+// obtener mes .getMonth()
+console.log(fecha2.getMonth() + 1)
 
-// Obtener el año .getFullYear()
-console.log(fecha2.getFullYear());
+// obtener año .getFullYear()
+console.log(fecha2.getFullYear())
 
 
-console.log(fecha2);
-// .toLocaleDateString
-console.log(fecha2.toLocaleDateString("es-GB"));
+// MOSTRAR FECHA EN STRING
+console.log(fecha2.toLocaleDateString())
+
+
+
+
+
 
 
 
