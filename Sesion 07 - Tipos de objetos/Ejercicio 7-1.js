@@ -7,5 +7,5 @@ familia.add("Alexander")
 console.log(familia);
 
 // - Modifica el Set original añadiendo el nombre "Javascript" (ya que empieza a formar parte de tu vida ;)
-familia.add("Javascript_")
+familia.add("Javascript")
 console.log(familia);
